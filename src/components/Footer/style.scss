@@ -1,0 +1,92 @@
+/* Footer.scss */
+
+// Define variables for reusability
+$primary-color: #3aa36c;
+$secondary-color: #ffffff;
+.footer-wrapper {
+    margin-top: 2rem;
+  width: 100%;
+  background-color: $primary-color;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .footer-content {
+      color: white;
+      display: flex;
+    justify-content: space-between;
+      font-family: Poppins;
+        width: 100%;
+        padding: 40px 0px;
+      .footer-logo {
+        flex: 1;
+
+        img {
+          max-width: 100%;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .footer-links {
+        flex: 1;
+        display: flex;
+
+        .footer-section {
+          flex: 1;
+
+          h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              margin-bottom: 8px;
+              a {
+                color: $secondary-color;
+                text-decoration: none;
+                &:hover {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        .footer-social{
+            flex: 1;
+        }
+      }
+      
+        .social-icons {
+          display: flex;
+          a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            text-decoration: none;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    
+
+    .footer-bottom {
+      text-align: center;
+      padding: 20px 0px;
+      p {
+        color: white;
+        font-size: 0.9rem;
+        font-family: Poppins;
+      }
+    }
+  }
+}

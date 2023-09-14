@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-banner-wrapper {
+  width: 100%;
+  .home-banner-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    .home-banner-content {
+      width: 100%;
+      img {
+        border-radius: 10px;
+      }
+      .slick-next {
+            right: 50px;
+            top: 95%;
+      }
+      .slick-prev {
+        left:90%;
+        top: 95%;
+        z-index: 1;
+    }
+      .slick-next:before, 
+      .slick-prev:before{
+            font-size: 50px;
+      }
+    }
+  }
+}

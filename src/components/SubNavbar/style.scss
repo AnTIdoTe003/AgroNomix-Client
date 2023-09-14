@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sub-nav-wrapper {
+  width: 100%;
+  height: 50px;
+  background: #008842;
+  .sub-nav-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    .sub-nav-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      p {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
