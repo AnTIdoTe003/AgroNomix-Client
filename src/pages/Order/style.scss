@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.order-page-wrapper {
+    margin-top: 2rem;
+  width: 100%;
+  .order-page-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    .order-page-content {
+      display: flex;
+      .order-page-left {
+        flex: 0.65;
+      }
+      .order-page-right {
+        flex: 0.35;
+      }
+    }
+  }
+}

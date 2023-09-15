@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import ProductCard from "../../../components/ProductCard";
 import  {ProductDemo} from '../../../constants/ProductDemo'
+import { Link } from "react-router-dom";
 import "./style.scss";
 const TodaysOffer = () => {
   return (
@@ -14,16 +15,18 @@ const TodaysOffer = () => {
             {
                 ProductDemo.map((ele,index)=>{
                     return(
-                        <ProductCard
-                        key={index}
-                        title={ele.title}
-                        rating={ele.rating}
-                        ratingNumber={ele.ratingNumber}
-                        brand={ele.brand}
-                        img={ele.img}
-                        price={ele.price}
-                        offerPrice={ele.offerPrice}
-                      />
+                      <Link to={'/product/123'}>
+                      <ProductCard
+                      key={index}
+                      title={ele.title}
+                      rating={ele.rating}
+                      ratingNumber={ele.ratingNumber}
+                      brand={ele.brand}
+                      img={ele.img}
+                      price={ele.price}
+                      offerPrice={ele.offerPrice}
+                    />
+                      </Link>
                     )
                 })
             }

@@ -34,8 +34,8 @@ const ProductCard = ({
         <span className="rating-number">({ratingNumber})</span>
       </div>
       <div className="product-price">
-        <span className="original-price">${price}</span>
-        <span className="offer-price">${offerPrice}</span>
+        <span className="original-price">Rs {price}</span>
+        <span className="offer-price">Rs {offerPrice}</span>
       </div>
     </div>
   </div>

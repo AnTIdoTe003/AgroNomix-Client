@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import "./style.scss";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import brinjal1 from "../../assets/images/brinjal1.jpg";
 import brinjal2 from "../../assets/images/brinjal2.jpg";
 import brinjal3 from "../../assets/images/brinjal3.jpg";
@@ -203,8 +203,13 @@ const ProductDetails = () => {
                 </Typography>
               </Box>
               <div className="btn-rack">
-                <button>Add to Cart</button>
+              <Link to={'/my-cart'}>
+              <button>Add to Cart</button>
+              </Link>  
+              <Link to={'/my-order'}>
+              
                 <button>Buy Now</button>
+              </Link>
               </div>
             </div>
           </div>

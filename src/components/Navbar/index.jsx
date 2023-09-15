@@ -11,6 +11,7 @@ import Modal from "../Modal";
 import { useAuth } from "../../context/auth";
 import axiosInstance from "../../helpers/axiosInstance";
 import { QueryClient, useMutation, useQuery, useQueryClient } from "react-query";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showLoginPopup, setShowLoginPopup] = useState(false);
   const onClose = () => {
@@ -50,9 +51,11 @@ const Navbar = () => {
       <div className="nav-wrapper">
         <div className="nav-container">
           <div className="nav-content">
-            <div className="nav-logo">
+          <Link to="/" >
+          <div className="nav-logo">
               <p>AgroNomix</p>
             </div>
+          </Link>  
             <div className="nav-search">
               <input type="text" />
               <FaSearch style={{ cursor: "pointer" }} />

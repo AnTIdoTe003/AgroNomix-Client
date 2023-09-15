@@ -2,12 +2,12 @@ import React from "react";
 import "./style.scss";
 import { useCart } from "../../context/cart";
 import { Stack } from "@mui/material";
-import Typography from "@mui/material/Typography";
 import { useAuth } from "../../context/auth";
 const CartPage = () => {
   const [cart] = useCart();
   const [auth] = useAuth();
   return (
+    
     <div className="cart-wrapper">
       <div className="cart-container">
         <div className="cart-content">
